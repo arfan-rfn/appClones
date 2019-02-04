@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.exception.whatsapp.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/whatsapp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:background="?android:attr/detailsElementBackground"
+        android:backgroundTint="?android:attr/textColorSecondaryInverseNoDisable"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="13dp"
+        android:background="?android:attr/detailsElementBackground"
+        android:backgroundTint="?android:attr/textColorSecondaryInverseNoDisable"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="13dp"
+        android:background="?android:attr/detailsElementBackground"
+        android:backgroundTint="?android:attr/textColorSecondaryInverseNoDisable"
+        android:ems="10"
+        android:hint="email address"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/background_dark"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/signup"
+        android:background="@drawable/round_button"
+        android:onClick="logIn"
+        android:text="Log in"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/username"
+        android:layout_below="@+id/imageView"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/round_button"
+        android:onClick="signUp"
+        android:text="Sign up"
+        android:textColor="@android:color/darker_gray" />
+</RelativeLayout>
